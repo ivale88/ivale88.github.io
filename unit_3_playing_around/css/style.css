@@ -1,0 +1,32 @@
+body {
+	background-color: #1F1F1F;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+}
+
+p {
+	text-align: center; 
+}
+
+.slogan {
+	font-size: 30px;
+	font-weight: 200;
+	text-align: center; 
+}
+
+#logo_landing {
+	font-size: 60px;
+	text-align: center;
+	background-color: rgba(255,255,255,.1); 
+}
+
+#img_landing {
+	 background-size: cover;
+	 max-width: 100%;
+	 max-height: auto;
+}  
+
+#visa {
+	 text-align: center;
+	 color: blue;
+}   
