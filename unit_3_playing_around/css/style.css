@@ -1,3 +1,7 @@
+* {
+	margin: 0; 
+}
+
 body {
 	background-color: #1F1F1F;
 	font-family: Helvetica, sans-serif;
@@ -6,27 +10,56 @@ body {
 
 p {
 	text-align: center; 
+	margin: 20px 20px 20px 20px;
 }
 
 .slogan {
 	font-size: 30px;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center; 
+	margin: 20px 20px 20px 20px;
+}
+
+.services_name {
+	background-color: rgba(205,92,92,.5);
+	padding: 5px 5px 5px 5px;
+	text-transform: uppercase;
+	margin: 20px 20px 5px 20px; 
+	text-decoration: underline;
+}
+
+.services_description {
+/*	background-color: rgba(188,143,143,.5);*/
+	background-color: rgba(80,93,102,.5);
+	padding: 5px 5px 5px 5px;
+	margin: 0px 20px 20px 20px;
+	font-weight: 300; 
+}
+
+.services_landing {
+	text-align: center;
+	max-width: 300px;
 }
 
 #logo_landing {
 	font-size: 60px;
 	text-align: center;
 	background-color: rgba(255,255,255,.1); 
+	margin: 20px 0px 20px 0px ;
+	padding: 5px 5px 5px 5px; 
 }
 
 #img_landing {
 	 background-size: cover;
 	 max-width: 100%;
 	 max-height: auto;
-}  
+	 background-attachment: fixed;
+} 
 
-#visa {
-	 text-align: center;
-	 color: blue;
-}   
+#introduction {
+	margin-bottom: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+ 

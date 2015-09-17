@@ -1,0 +1,37 @@
+body { 
+	text-align: center;
+	font-family: Helvetica;
+	background: rgba(0,0,0,.8);
+	background-size: cover;
+	color: #fff;
+}
+
+#logo_landing {
+	font-size: 100px;
+	margin-bottom: 30px;
+	background-color: rgba(255,255,255,.1);
+}	
+
+#image_landing {
+	height: auto;
+	width: 100%;
+	/*padding-left: 50px;*/
+}
+
+hr {
+	border-width: 1px;
+	border-style: solid;
+	width: 500px;
+}
+
+#claim_landing {
+	font-weight: 300; 
+}
+
+#div_prova  {
+	font-size: 30px;
+	display: inline; 
+	margin: 100;
+	background-color: rgba(0,0,0,.3);
+
+}
