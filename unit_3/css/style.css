@@ -53,24 +53,30 @@ ul {
 }	
 
 #services {
-	background-color: rgba(20,20,20,.5);
-	padding: 5px 5px;
 	margin: 30px 50px;
 }
 
+#services img {
+	width: 60%;
+	height: 100%;
+	background-size: cover;
+}
+
 #services h3 {
+	background-color: rgba(20,20,20,.5);
+	padding: 5px 5px;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }	
 
 #contact {
-	background-color: rgba(20,20,20,.5);
-	padding: 5px 5px;
 	margin: 30px 50px;
 }
 
 #contact h3 {
+	background-color: rgba(20,20,20,.5);
+	padding: 5px 5px;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -78,5 +84,5 @@ ul {
 
 #contact p {
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 200;
 }
