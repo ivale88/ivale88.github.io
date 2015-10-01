@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	margin: 0px;
+}  
+
+body {
+	font-size: 16px;
+} 
+
+p, a {
+	font-family: 'Quattrocento', serif;
+} 
+
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+} 
+
+h2 {
+	padding-top: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+} 
+
+/*QUESTION 1: I want to upload rectangular pictures and then crop them so they are quared. Why doesn't this thing below work?*/
+
+/*.image-container {
+  background-image: url('unit_4/images/barcelona_1.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  width:250px;
+  height:250px;
+} */
+
+#slogan {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+#watermark {
+	font-family: 'Ultra', serif;
+	font-size: 60;
+	text-align: center;
+	margin: 20px;
+}
+
+#intro {
+	background-color: #5E4352;
+	color: #fff;
+	padding-bottom: 20px; 
+} 
+
+#intro a {
+	color: #965D62;
+}
+
+#intro ul {
+	text-align: right;
+	margin: 5px 10px;
+}
+
+#intro li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 1.4em;
+}
+
+#services div {
+	margin: 20px 20px;
+	max-width: 26em;
+	line-height: 1.4em;
+	display: inline-block;
+	vertical-align: text-top;
+	text-align: justify; 
+}
+
+#room_finder {
+	background-color: #67434F;
+}
+
+#room_finder img {
+	margin: 10px;
+	max-width: 23%;
+	height: auto;
+	overflow: hidden;
+	display: inline-block; 
+}
+
+/*QUESTION 2: how can I distribute images so that they respect the padding but they also distribute uniformely occupying all the available space?*/
+
+#room_finder div {
+	padding: 1.4em;
+}
+
+/*QUESTION 3: Why dies this color all the "p" in the html?*/
+
+/*#room_finder h2, p {
+	color: #fff;
+}*/
+
+#room_finder h2 {
+	color: #fff;
+}
+
+#community_finder {
+
+} 
