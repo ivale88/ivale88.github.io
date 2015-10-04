@@ -4,7 +4,24 @@
 
 
 
-body {
-	background: url("ivale88.github.io/unit_4/images/ireland.jpg");
+#watermark {
+	text-align: center;
+	color: #fff;
+	font-family: Futura, sans-serif;
+	font-size: 60px;
+}
+
+#background_image {
+	padding-top: 50px;
+	height: 500px;
+	background: url("images/ireland.jpg");
 	background-size: cover;
+	background-attachment: fixed;
 }  
+
+#slogan {
+	padding-top: 50px;
+	height: 500px;
+	background-color: #6E6662;
+
+}
