@@ -58,40 +58,47 @@ nav a {
 the next two classes these properties are ignored. Is there something
 that is overriding them in the next two classes?*/
 
-#services_overview img { 
-	width: 100%;
-}
+
 
 .clearfix:after { 
 	visibility: hidden;
 	display: block;
 	font-size: 0;
-	content: " ";
+	content: "#";
 	clear: both;
 	height: 0;
 }
 
+
+/*how do I have blocks unfloating as the screen shrinks?*/
 .column { 
 	/*background-color: yellow;*/
 	float: left;
-	padding:1em;
+	padding: 3em;
 	text-align: center;
 	width: 33.33%;
 }
 
-.buttons a { 
+.buttons { 
 	color: black;
+	clear:both;
+	display:inline-block;
 	background-color: rgb(245,233,200);
 	padding: 5px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border: solid 2px black;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
 	text-decoration: none;
+}
+
+.buttons:nth-of-type(2) {
+margin-left: 20px;
 }
 
 #top_page { 
 	text-align: center;
-	background: url(images/typewriter.jpg);
+	background: url(../images/typewriter.jpg);
 	/*background: url(images/header1.jpg);*/
 	background-size: cover;
 	background-position: center;
@@ -101,44 +108,42 @@ that is overriding them in the next two classes?*/
 #top_page h1 { 
 	font-family: 'Special Elite', serif;
 }
+
 #top_page hr { 
 	color: white;
 }
 
-
-/*How can I reduce align the text (or the block?) on the left and 
-reduce the width? Using margin right is obviously wrong.*/
 #services_overview { 
 	/*background-color: rgba(172,108,130,.7);*/
-	text-align: left;
-	margin-top: 60px;
-	margin-left: 20px;
-	padding:2em;
-	width:1200px;
+/*	margin-top: 60px;
+	margin-left: 20px;*/
+	width: 800px;
+	margin: 60px auto;
 }
 
-
-/* I used the display:; inline-block; to reduce the border-bottom, 
-how can I center the block now?*/
 #services_overview h3 { 
 	/*background-color: blue;*/
-	display: inline-block;
+	display: block;
 	margin: 0px auto;
 	border-bottom: solid 2px;
 }
 
 #services_overview h4 { 
-	margin-top: 10px;
+	margin-top: 20px;
+	font-size: 1.5em;
 }
 
-#services_overview div { 
+
+#services_overview img { 
+	width: 100%;
 }
 
 #last_article { 
 /*	background-color: rgba(172,108,130,.7);*/
-	text-align: right;
-	float:right;
-	width:1200px;
+/*	float: right;*/	
+	margin: 60px auto;
+	text-align: justify;
+	width: 800px;
 }
 
 #last_article p{ 
@@ -148,8 +153,11 @@ how can I center the block now?*/
 
 #last_article h3 { 
 	/*background-color: blue;*/
-	display: inline-block;
 	margin: 0px auto;
 	border-bottom: solid 2px;
+}
+
+#last_article h4 { 
+	margin-top: 10px;
 }
 
