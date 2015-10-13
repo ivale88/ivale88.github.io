@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body { 
+	font-size: 18px;
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 400;
+}
+
+h1 { 
+	color: #fff;
+	font-size: 4em;
+}
+
+h2 { 
+	color: #fff;
+	font-size: 2em;
+}
+
+h3 { 
+	/*color: #fff;*/
+	font-size: 1.5em;
+
+}
+
+hr { 
+	display: block;
+	border-style: solid;
+	margin: 10px auto;
+	width: 1000px;
+}
+
+nav { 
+	margin: 10px auto;
+	text-align: center;	
+	background-color: #eee;
+	width: 1000px;
+}
+
+nav ul { 
+	list-style-type: none;
+	padding: 0;
+}
+
+nav a { 
+	padding: 20px;
+	width: 300px;
+	height: 1em;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+nav a { 
+	text-decoration: none;
+	color: black;
+}
+
+
+/*I know IDs should go after classes, but if I move this ID after
+the next two classes these properties are ignored. Is there something
+that is overriding them in the next two classes?*/
+
+#services_overview img { 
+	max-width: 150px;
+	max-height: 150px;
+	margin: 0 auto;
+	padding: 10px auto;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.column { 
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	text-align: center;
+	/*background-color: yellow;*/
+	float: left;
+}
+
+.buttons a { 
+	color: black;
+	background-color: rgb(245,233,200);
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 2px black;
+	text-decoration: none;
+}
+
+#top_page { 
+	text-align: center;
+	margin-top: 20px;
+	background: url(images/typewriter.jpg);
+	/*background: url(images/header1.jpg);*/
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+#top_page h1 { 
+	/* very cool but how can I arrange properly also the h2 below?
+
+	vertical-align: middle;
+	line-height: 500px;*/
+	font-family: 'Special Elite', serif;
+	padding-top: 200px;
+}
+
+
+/* how can I lower the top h-line?
+
+#top_page hr { 
+	color: white;
+}*/
+
+#services_overview { 
+	/*background-color: rgba(172,108,130,.7);*/
+	text-align: left;
+	margin-right: 640px;
+	margin-top: 60px;
+	margin-left: 20px;
+	padding-right: 20px;
+}
+
+
+/* I used the display inline block to reduce the border-bottom, 
+how can I center the block now?*/
+#services_overview h3 { 
+	/*background-color: blue;*/
+	display: inline-block;
+	margin: 0px auto;
+	border-bottom: solid 2px;
+}
+
+#services_overview h4 { 
+	margin-top: 10px;
+}
+
+#services_overview div { 
+}
+
+#last_article { 
+/*	background-color: rgba(172,108,130,.7);*/
+	text-align: right;
+	margin-left: 640px;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+
+#last_article p{ 
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+#last_article h3 { 
+	/*background-color: blue;*/
+	display: inline-block;
+	margin: 0px auto;
+	border-bottom: solid 2px;
+}
