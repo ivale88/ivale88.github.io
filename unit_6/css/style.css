@@ -1,0 +1,249 @@
+
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+	font-family: 'Josefin Slab', sans-serif;
+	font-size: 18px;
+}
+
+header {
+	background: url(../images/typewriter.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 13em 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Special Elite';
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 1em 0 0 2%;
+	border-bottom: solid 1px #000;
+}
+
+h4 {
+	font-size: 1.5em;
+	padding: 1em 0 0 2%;
+}
+
+h5 {
+	font-size: 1.5em;
+	padding: 0 0 0 2%;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+nav {
+/*	background-color: #eee;
+*/	width: 90%;
+	margin: 1em auto;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px; 
+}
+
+/*is there a way to tell the objects to distribute horizontally
+leaving equal spaces among between them? */
+
+nav div {
+	float: left;
+	margin: 0 0 0 2%;
+	width: 18%;
+	padding: 1em;
+	text-align: center;
+}
+
+a {
+	color: #000;
+	font-size: 1.2em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer {
+	display: block;
+}
+
+
+footer p {
+	display: block;
+	text-align: center;
+}
+
+a:hover {
+	color: rgb(128,44,39);
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "#";
+	clear: both;
+	height: 0;
+}
+
+.colums {
+	float: left;
+	margin: 0 0 0 2.5%;
+	padding: 1em;
+	width: 30%;
+}
+
+.buttons { 
+	color: black;
+	display:inline-block;
+	background-color: rgba(218,189,137,.5);
+	padding: 5px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-right: 4%;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	text-decoration: none;
+}
+.introduction { 
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	margin: 2em auto;
+	text-align: center;
+	width: 50%;
+}
+
+#services { 
+	width: 90%;
+	margin: 0 auto;
+}
+
+#services img {
+	width: 100%;
+	display: block;
+}
+
+#services h4 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#service_sequence { 
+	margin-top: 2em;
+}
+
+#last_article {
+	width: 90%;
+	margin: 5em auto 0 auto;
+}
+
+#last_article div {
+	float:left;
+	width: 50%;
+	padding: 2%;
+}
+
+#social {
+	width: 60%;
+	margin: 5em auto 1em auto;
+}
+
+#social div {
+	float: left;
+	margin: 0 0 0 5%;
+	width: 20%;	
+}
+
+#social img {
+	width: 50%;
+}
+
+#copy {
+	background-color: #eee;
+	border-top: solid 1px;
+}
+
+
+/* About page */
+
+.left div {
+	float: left;
+	margin: 2em 2% 0 2%;
+	text-align: left;
+	width: 46%;
+}
+
+.right div {
+	float: right;
+	margin: 2em 2% 0 2%;
+	text-align: right;
+	width: 46%;
+}
+
+#quote {
+	background: url(../images/about_image.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 20% 10% 2% 2%;
+	margin: 5em 5%;
+	width: 70%;
+}
+
+#about_me {
+	margin: 2em auto;
+	width: 90%;
+}
+
+#about_me p {
+	margin-top: 1.5em;
+}
+
+#about_me img {
+	width: 100%;
+	display: block;
+}
+
+#about_me hr {
+	border: none;
+	clear: both;
+	height: 2em;
+}
+
+
+/* My Articles page */
+#articles {
+	margin: 5em auto;
+	width: 90%;
+}
+
+#article_last article {
+	background-color: #eee;
+	float: left;
+	margin-left: 2%; 
+	width: 46%;
+}
+
+#article_2 article {
+	background-color: #eee;
+	float: right;
+	margin-right: 2%; 
+	width: 46%;
+}
+
+
+
+
+
+
