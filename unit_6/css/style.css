@@ -7,6 +7,7 @@
 body {
 	font-family: 'Josefin Slab', sans-serif;
 	font-size: 18px;
+	color:#222;
 }
 
 header div {
@@ -58,16 +59,16 @@ nav {
 /*is there a way to tell the objects to distribute horizontally
 leaving equal spaces among between them? */
 
-nav div {
+nav a {
 	float: left;
-	margin: 0 0 0 2%;
-	width: 18%;
+	margin: 0 2%;
+	width: 16%;
 	padding: 1em;
 	text-align: center;
 }
 
 a {
-	color: #000;
+	color: #222;
 	font-size: 1.2em;
 	text-align: center;
 	text-decoration: none;
@@ -83,7 +84,10 @@ footer p {
 	display: block;
 	text-align: center;
 }
-
+figure img {
+	width: 100%;
+	display: block;
+}
 a:hover {
 	color: rgb(128,44,39);
 }
@@ -99,16 +103,14 @@ a:hover {
 
 .colums {
 	float: left;
-	margin: 0 0 0 2.5%;
 	padding: 1em;
-	width: 30%;
+	width: 33.33%;
 }
 
 .buttons { 
 	color: black;
 	display:inline-block;
-	background-color: rgba(218,189,137,.5);
-	padding: 5px;
+	padding: 1em;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	margin-right: 4%;
@@ -129,11 +131,6 @@ a:hover {
 	margin: 0 auto;
 }
 
-#services img {
-	width: 100%;
-	display: block;
-}
-
 #services h4 {
 	font-size: 1.5em;
 	text-align: center;
@@ -149,24 +146,25 @@ a:hover {
 }
 
 #last_article div {
-	float:left;
-	width: 50%;
-	padding: 2%;
+	-webkit-column-count:2;
+	column-count:2;
+	-webkit-column-gap:2em;
+	column-gap:2em;
 }
-
 #social {
 	width: 60%;
 	margin: 5em auto 1em auto;
 }
 
-#social div {
+#social a {
+	display:block;
 	float: left;
-	margin: 0 0 0 5%;
-	width: 20%;	
+	margin: 0 5%;
+	width: 15%;	
 }
 
 #social img {
-	width: 50%;
+	width: 100%;
 }
 
 #copy {
