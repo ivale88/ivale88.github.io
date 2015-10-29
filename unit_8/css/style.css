@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400);
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+h1 {
+	font-family: 'Ultra', sans-serif;
+	font-size: 5em;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+	color: #fff;
+}
+
+h3 {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+	margin: 4em 6%;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
+
+figure > h4 {
+	text-align: center;
+}
+
+section {
+	margin-top: 9%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #eee;
+	color: black;
+	/*why doesn't color work?*/
+}
+
+img:hover {
+	opacity: 0.5;
+
+}
+
+/*standard pages*/
+
+nav {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+	margin: 0 auto;
+	width: 80%;
+}
+
+nav a {
+	float: left;
+	padding: 0.5em;
+	margin: 2% 2%;
+	width: 25%;
+	text-align: center;
+	text-decoration: none;
+}
+
+a > img {
+	width: 100px;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "#";
+	clear: both;
+	height: 0;
+}
+
+.colums {
+	float: left;
+	padding: 0.5em;
+	width: 33.33%;
+}
+
+.colums img {
+	width: 100%;	
+}
+
+.buttons { 
+	clear: both;
+	color: black;
+	display:inline-block;
+	padding: 1em;
+	margin: 5% 4% 5% 0.2em;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	text-decoration: none;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 920px;
+	width: 100%;
+	text-align: center;
+	padding: 20% 0;
+}
+
+#homepage img {
+	margin-bottom: 2em;
+	width: 70%;
+}
+
+#subscribe {
+	border-top: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	color: #fff;
+	display: inline-block;
+	margin-top: 4em;
+}
+
+#slogan {
+	padding: 0 1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+/*what am I calculating wrong?
+why do I have that much margin on the right?*/
+
+.colums {
+	float: left;
+	width: 47.5%;
+	padding: 0.5%;
+	margin: 0 1%;
+}
+
+#slogan {
+	font-size: 2em;
+	padding: 0 1em;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	height: 780px;
+	width: 100%;
+	text-align: center;
+	padding: 30% 0;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+
+.colums {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#slogan {
+	font-size: 2em;
+	padding: 0 1em;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	height: 780px;
+	width: 100%;
+	text-align: center;
+	padding: 50% 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
