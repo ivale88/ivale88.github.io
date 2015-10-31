@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ultra);
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
 
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -9,6 +11,10 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	color: #222;
+}
+
+header {
+	position: relative;
 }
 
 h1 {
@@ -25,9 +31,9 @@ h2 {
 
 h3 {
 	color: #333;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Indie Flower', sans-serif;
 	font-size: 3em;
-	margin: 4em 6%;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -36,13 +42,14 @@ h4 {
 	font-size: 1.5em;
 }
 
-figure > h4 {
+h4:hover {
+	color: black;
+}
+
+a > h4 {
 	text-align: center;
 }
 
-section {
-	margin-top: 9%;
-}
 
 a {
 	text-decoration: none;
@@ -51,12 +58,6 @@ a {
 a:hover {
 	background-color: #eee;
 	color: black;
-	/*why doesn't color work?*/
-}
-
-img:hover {
-	opacity: 0.5;
-
 }
 
 /*standard pages*/
@@ -92,20 +93,40 @@ a > img {
 
 .colums {
 	float: left;
+	height: 300px;
+	overflow: hidden;
 	padding: 0.5em;
+	position: relative;
 	width: 33.33%;
 }
 
 .colums img {
-	width: 100%;	
+	width: 100%;
+}
+
+.colums h4 {
+	font-size: 3em;
+	color: rgb(255,255,255);
+	left: 5%;
+	position: absolute;
+    top: 30%;
+    width: 90%;
+}
+
+.colums h4:hover {
+	color: black;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .buttons { 
 	clear: both;
 	color: black;
 	display:inline-block;
+	font-family: 'Indie Flower', sans-serif;
+	margin-top: 5%; 
+	/*I tried to use the position and transform properties 
+	instead of margin but I couldn't make it work!*/ 
 	padding: 1em;
-	margin: 5% 4% 5% 0.2em;
 	border-top: solid 1px black;
 	border-bottom: solid 1px black;
 	text-decoration: none;
@@ -115,15 +136,20 @@ a > img {
 	background: url(../images/landing_page.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	height: 920px;
+	height: 90hv;
 	width: 100%;
 	text-align: center;
 	padding: 20% 0;
 }
 
 #homepage img {
-	margin-bottom: 2em;
+	position: relative;
 	width: 70%;
+}
+
+#slogan {
+	position: relative;
+	padding: 0 1em;
 }
 
 #subscribe {
@@ -131,24 +157,24 @@ a > img {
 	border-bottom: solid 1px #fff;
 	color: #fff;
 	display: inline-block;
-	margin-top: 4em;
 }
 
-#slogan {
-	padding: 0 1em;
+#homepage a:hover {
+	background-color: #eee;
+	color: black;
 }
 
+#home_services img:hover {
+	opacity: 0.5;
+}
 
 @media only screen and (max-width: 768px) {
 
-/*what am I calculating wrong?
-why do I have that much margin on the right?*/
-
 .colums {
 	float: left;
-	width: 47.5%;
-	padding: 0.5%;
-	margin: 0 1%;
+	width: 50%;
+	padding: 0.5em;
+	margin: 0;
 }
 
 #slogan {
