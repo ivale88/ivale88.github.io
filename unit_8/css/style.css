@@ -123,7 +123,8 @@ a > img {
 	color: black;
 	display:inline-block;
 	font-family: 'Indie Flower', sans-serif;
-	margin-top: 5%; 
+	font-size: 1.5em;
+	margin: 5% 1%; 
 	/*I tried to use the position and transform properties 
 	instead of margin but I couldn't make it work!*/ 
 	padding: 1em;
