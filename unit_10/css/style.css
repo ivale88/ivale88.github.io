@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+header {
+	position: relative;
+}
+
+h1 {
+	font-family: 'Ultra', sans-serif;
+	font-size: 5em;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+	color: #fff;
+}
+
+h3 {
+	color: #333;
+	font-family: 'Indie Flower', sans-serif;
+	font-size: 3em;
+	padding: 1em;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
+
+h4:hover {
+	color: black;
+}
+
+a > h4 {
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #eee;
+	color: black;
+}
+
+/*standard pages*/
+
+nav {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+	margin: 0 auto;
+	width: 80%;
+}
+
+nav a {
+	float: left;
+	padding: 0.5em;
+	margin: 2% 2%;
+	width: 25%;
+	text-align: center;
+	text-decoration: none;
+}
+
+a > img {
+	width: 100px;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "#";
+	clear: both;
+	height: 0;
+}
+
+.colums {
+	float: left;
+	height: 300px;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+	width: 33.33%;
+}
+
+.colums img {
+	width: 100%;
+}
+
+.colums h4 {
+	font-size: 3em;
+	color: rgb(255,255,255);
+	left: 5%;
+	position: absolute;
+    top: 30%;
+    width: 90%;
+}
+
+.colums h4:hover {
+	color: black;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.buttons { 
+	clear: both;
+	color: black;
+	display:inline-block;
+	font-family: 'Indie Flower', sans-serif;
+	font-size: 1.5em;
+	margin: 5% 1%; 
+	/*I tried to use the position and transform properties 
+	instead of margin but I couldn't make it work!*/ 
+	padding: 1em;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	text-decoration: none;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 90hv;
+	width: 100%;
+	text-align: center;
+	padding: 20% 0;
+}
+
+#homepage img {
+	position: relative;
+	width: 70%;
+}
+
+#slogan {
+	position: relative;
+	padding: 0 1em;
+}
+
+#subscribe {
+	border-top: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	color: #fff;
+	display: inline-block;
+}
+
+#homepage a:hover {
+	background-color: #eee;
+	color: black;
+}
+
+#home_services img:hover {
+	opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+
+.colums {
+	float: left;
+	width: 50%;
+	padding: 0.5em;
+	margin: 0;
+}
+
+#slogan {
+	font-size: 2em;
+	padding: 0 1em;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	height: 780px;
+	width: 100%;
+	text-align: center;
+	padding: 30% 0;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+
+.colums {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#slogan {
+	font-size: 2em;
+	padding: 0 1em;
+}
+
+#homepage {
+	background: url(../images/landing_page.jpg);
+	background-size: cover;
+	height: 780px;
+	width: 100%;
+	text-align: center;
+	padding: 50% 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
